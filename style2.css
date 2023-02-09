@@ -1,0 +1,96 @@
+body{
+    font-family: Helvetica;
+    background-color: #eee;
+    /* background-image: linear-gradient(to bottom right, #fff, rgb(227, 163, 163), rgb(54, 110, 121)); */
+    color: #333;
+}
+
+@font-face {
+    font-family: 'logo';
+    src: url('typeecon.otf') format('truetype');;
+ }
+
+ @font-face {
+    font-family: 'edensor';
+    src: url('Edensor-Free.otf') format('truetype');;
+ }
+
+ @font-face {
+    font-family: 'manrope';
+    src: url('manrope-regular.ttf') format('truetype');;
+ }
+
+li{display: inline;}
+li.col-25{width: 25%; padding: 0px;}
+li.col-48{width: 48%; padding: 0px;}
+header{box-shadow: 5px 0px 5px rgb(181, 181, 181); padding-bottom: 10px; background-color: #fff; }
+
+.loghi{font-family: logo; padding-left: 30px; font-size: 20px; color: #777777; letter-spacing: 5px;}
+a{text-decoration: none; color: #333;}
+
+
+@media (max-width: 768px){
+    h1.logo{font-size: 60px;}
+    p.loghi{padding-left: 10px;padding-right: 10px; font-size: 16px;}
+}
+
+.logo{
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 56px;
+    font-family: edensor;
+    font-weight: 100;
+    letter-spacing: -0.5;
+}
+
+#align-right{text-align: right;}
+
+#menu li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:edensor;
+    letter-spacing: -0.2px;
+    font-size: 15px;
+    color: #575757;
+}
+
+#menu li:hover{color: #8e8e8e;}
+
+ul{
+    text-align: center;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.copertina{width: 100%;}
+
+.titolo{
+    margin-left: 80px;
+    font-family: edensor;
+    letter-spacing: -0.8;
+    line-height: 40px;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.grid{display: flex; flex-wrap: wrap; width: 110%; align-items: center;}
+.col-33{width: 30%; padding: 10px;}
+div.grid{width: 100%;}
+
+footer{
+    background-color: #333; color: #eee;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items:end;
+}
+
+.presentazione{width: 42%; padding: 40px; margin: 0px; font-family: manrope; font-weight: 400;}
+
