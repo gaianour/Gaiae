@@ -6,11 +6,15 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
 }
+div.container{width: 100%;}
+
 .item{
-    width:30%;
+    width: 30%;
     padding:5px;
 }
+
 @font-face {
     font-family: 'logo';
     src: url('typeecon.otf') format('truetype');;
