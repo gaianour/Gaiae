@@ -4,7 +4,9 @@ body{
     color: #333;
 }
 
-/* font */
+main{margin-left: 30px;}
+
+/* dichiarazione font */
 @font-face {
     font-family: 'logo';
     src: url('typeecon.otf') format('truetype');;
@@ -19,8 +21,6 @@ body{
     font-family: 'manrope';
     src: url('manrope-regular.ttf') format('truetype');;
  }
-
-main{margin-left: 30px;}
 
 
 .container{display: flex; flex-wrap: wrap;}

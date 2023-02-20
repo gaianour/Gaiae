@@ -5,6 +5,8 @@ body{
     color: #333;
 }
 
+
+/* font */
 @font-face {
     font-family: 'logo';
     src: url('typeecon.otf') format('truetype');;
@@ -20,19 +22,14 @@ body{
     src: url('manrope-regular.ttf') format('truetype');;
  }
 
+
 li{display: inline;}
 li.col-25{width: 25%; padding: 0px;}
 li.col-48{width: 48%; padding: 0px;}
-header{box-shadow: 5px 0px 5px rgb(181, 181, 181); padding-bottom: 10px; background-color: #fff; }
 
 .loghi{font-family: logo; padding-left: 30px; font-size: 20px; color: #777777; letter-spacing: 5px;}
 a{text-decoration: none; color: #333;}
-
-
-@media (max-width: 768px){
-    h1.logo{font-size: 60px;}
-    p.loghi{padding-left: 10px;padding-right: 10px; font-size: 16px;}
-}
+header{box-shadow: 5px 0px 5px rgb(181, 181, 181); padding-bottom: 10px; background-color: #fff; }
 
 .logo{
     text-align: center;
