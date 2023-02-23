@@ -43,3 +43,46 @@ img{width: 100%; margin: 0px;}
 
 h1{font-size: larger;}
 
+<<<<<<< HEAD
+=======
+#navigazione{text-align: center;}
+#navigazione li{display: inline;padding: 10px;}
+a{color: #333; text-decoration: none;}
+/* il codice che segue è relativo alla pagina portfolio.html. cerco un modo per rendere piu pulito il codice  */
+
+.box {
+   display: flex;
+   flex-wrap: wrap;
+}
+.element{
+   display: inline;
+   padding: 10px;
+   width:33.3%
+}
+
+.element1:hover{
+   content:"Portrait" ;
+   box-shadow: 10px 10px 5px rgb(154, 133, 133);
+}
+.element2:hover{
+   content:"Nature Photo" ;
+   box-shadow: 10px 10px 5px rgb(154, 133, 133);
+}
+.element3:hover{
+   content:" City Photo" ;
+   box-shadow: 10px 10px 5px rgb(154, 133, 133);
+}
+
+.element4:hover{
+   content:"Idk Photo" ;
+   box-shadow: 10px 10px 5px rgb(154, 133, 133);
+}
+.element5:hover{
+   content:" Plant Photo" ;
+   box-shadow: 10px 10px 5px rgb(154, 133, 133);
+}
+.element1:hover{
+   content:"Food Photo" ;
+   box-shadow: 10px 10px 5px rgb(154, 133, 133);
+}
+>>>>>>> 46f7ed78c57bf06f3603aabda50dc0d2edcd09de
