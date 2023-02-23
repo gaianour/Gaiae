@@ -22,7 +22,7 @@
    font-family: manrope;
 }
 
-main{margin-left: 200px;}
+main{margin-left: 150px; margin-right: 100px;}
 
 /* prima riga header */
 .container{display: flex; flex-wrap: wrap;}
@@ -41,13 +41,14 @@ img{width: 100%; margin: 0px;}
 /* introduzione pagina */
 .item50{width: 50%;}
 
-h1{font-size: larger;}
+.intestazione{font-size: 40px; margin-top: 50px;}
+.subtitle{font-size: 20px; margin-top: 30px;}
 
-<<<<<<< HEAD
-=======
 #navigazione{text-align: center;}
 #navigazione li{display: inline;padding: 10px;}
 a{color: #333; text-decoration: none;}
+
+
 /* il codice che segue è relativo alla pagina portfolio.html. cerco un modo per rendere piu pulito il codice  */
 
 
@@ -76,4 +77,3 @@ a{color: #333; text-decoration: none;}
    content:"Food Photo" ;
    box-shadow: 10px 10px 5px rgb(154, 133, 133);
 }
->>>>>>> 46f7ed78c57bf06f3603aabda50dc0d2edcd09de
