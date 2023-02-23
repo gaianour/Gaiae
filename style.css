@@ -22,6 +22,9 @@
    font-family: manrope;
 }
 
+header{position: fixed; width: 100%; background: #ddd; height: 110px; top: 0;}
+body {padding-top: 110px;}
+
 main{margin-left: 150px; margin-right: 100px;}
 
 /* prima riga header */
