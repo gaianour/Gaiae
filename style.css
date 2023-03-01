@@ -1,5 +1,7 @@
 *{box-sizing: border-box; margin: 0px; padding: 0px;}
 
+a{color: #333; text-decoration: none;}
+
 /* dichiarazione font */
 @font-face {
     font-family: 'logo';
@@ -11,16 +13,27 @@
     src: url('font/Edensor-Free.otf') format('truetype');;
  }
 
- @font-face {
+ /* @font-face { 
     font-family: 'manrope';
     src: url('font/Manrope-Regular.ttf') format('truetype');;
- }
+ } */
+
+ @font-face {
+   font-family: 'DMsans';
+   src: url('font/DMSans.ttf') format('truetype');;
+}
+
+
 
  body{
    background-color: #eee;
    color: #333;
-   font-family: manrope;
+   font-family: DMsans;
 }
+body {padding-top: 110px;}
+
+
+/* HEADER */
 
 header{
    position: fixed; 
@@ -31,29 +44,32 @@ header{
    box-shadow: #555555 0px 5px 10px;
 }
 
-body {padding-top: 110px;}
+
+.header__grid{display: flex; flex-wrap: wrap; width: 110%;}
+.header__grid__item{width: 30%; padding: 10px; text-align: center;}
+.header__item__social{font-family: logo; font-size: 30px; text-align: left;}
+#header__logo{font-size:60px; font-family: edensor; padding-bottom: 0px;}
+
+#header__navigazione{text-align: center;}
+#header__navigazione li{display: inline; padding: 20px;}
+#header__navigazione li a{color: #333; font-size: 15px; font-family: edensor; letter-spacing: 1.5px;}
+#header__navigazione li a:hover{background-color: #d0efff;}
+#titolo{font-size:60px; font-family: edensor; padding-bottom: 0px;}
+
+
+.img__copertina{width: 100%; margin: 0px;}
+
+/* MAIN */
 
 main{margin-left: 150px; margin-right: 100px;}
 
-/* prima riga header */
-.box{display: flex; flex-wrap: wrap; margin-top: 50px;}
-.logo{font-family: logo; font-size: 30px; text-align: left;}
-#titolo{font-size:60px; font-family: edensor; padding-bottom: 0px;}
+.main__grid{display: inline; flex-wrap: wrap;}
+.main__grid__item{text-align: center;}
+.item50{width: 50%;}
 
-/* seconda linea header */
-#navigazione{text-align: center; padding-bottom: 10px;}
-#navigazione li{display: inline;padding: 20px;}
-a{color: #666; text-decoration: none; font-size: 15px; font-family: edensor; letter-spacing: 1.5px;}
-a:hover{color: #333;}
-
-img{width: 100%; margin: 0px;}
-
-/* introduzione pagina */
-.item50{width: 50%; text-align: center;}
-
-.intestazione{font-size: 40px; margin-right: 50px;}
-.subtitle{font-size: 20px; margin-top: 30px; margin-right: 50px;}
-.link{
+.main__intestazione{font-size: 40px; margin-right: 50px;}
+.main__sottotitolo{font-size: 20px; margin-top: 30px; margin-right: 50px;}
+.main__link{
    font-size: 25px; 
    text-decoration: underline; 
    color: #1b3c57;
@@ -62,17 +78,18 @@ img{width: 100%; margin: 0px;}
    margin-left: 20px;
    margin-right: 50px;
 }
-.imm-box{height: 100%;}
 
-#navigazione{text-align: center;}
-#navigazione li{display: inline;padding: 10px;}
-a{color: #333; text-decoration: none;}
+.main__immagine{height: 90%;}
 
 
 /* il codice che segue è relativo alla pagina portfolio.html. cerco un modo per rendere piu pulito il codice  */
 /* le classi usate per il flexbox sono le stesse utilizzate per la pagina index.html */
-.griglia{display: flex; flex-wrap: wrap;}
-.griglia__item{width: 30%; padding: 10px; text-align: center;}
+
+
+
+
+
+/* PORTFOLIO */
 .griglia__item__normale {width: 100%; top: 0; left: 0;}
 .griglia__item__hover{
    overflow: hidden;transition: 0.2s;opacity: 0;width: 100%; padding: 10px; top: 0; left: 0;
