@@ -66,8 +66,8 @@ main{margin-left: 150px; margin-right: 100px;}
 
 .main__grid{flex-wrap: wrap; display: flex; width: 100%;}
 .main__grid__item{text-align: center;}
-.item50{width: 50%;}
-.item33{width: 33%;}
+.item50{width:50%;}
+.item33{width:33%;}
 
 .main__intestazione{font-size: 40px; margin-right: 50px;}
 .main__sottotitolo{font-size: 20px; margin-top: 30px; margin-right: 50px;}
@@ -97,6 +97,7 @@ main{margin-left: 150px; margin-right: 100px;}
 .main__grid__item__normale {width: 100%; top: 0; left: 0;}
 .main__grid__item__hover{
    overflow: hidden;transition: 0.2s;opacity: 0;width: 100%; padding: 10px; top: 0; left: 0;
+   
 }
 
 .main__grid__item__hover__scritte{
