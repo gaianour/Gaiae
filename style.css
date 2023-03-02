@@ -53,19 +53,21 @@ header{
 #header__navigazione{text-align: center;}
 #header__navigazione li{display: inline; padding: 20px;}
 #header__navigazione li a{color: #333; font-size: 15px; font-family: edensor; letter-spacing: 1.5px;}
-#header__navigazione li a:hover{background-color: #d0efff;}
+#header__navigazione li a:hover{background-color: #d3e8e0;}
 #titolo{font-size:60px; font-family: edensor; padding-bottom: 0px;}
 
-
 .img__copertina{width: 100%; margin: 0px;}
+
+
 
 /* MAIN */
 
 main{margin-left: 150px; margin-right: 100px;}
 
-.main__grid{display: inline; flex-wrap: wrap;}
+.main__grid{flex-wrap: wrap; display: flex; width: 100%;}
 .main__grid__item{text-align: center;}
 .item50{width: 50%;}
+.item33{width: 33%;}
 
 .main__intestazione{font-size: 40px; margin-right: 50px;}
 .main__sottotitolo{font-size: 20px; margin-top: 30px; margin-right: 50px;}
@@ -79,7 +81,7 @@ main{margin-left: 150px; margin-right: 100px;}
    margin-right: 50px;
 }
 
-.main__immagine{height: 90%;}
+.main__immagine{width: 100%;}
 
 
 /* il codice che segue è relativo alla pagina portfolio.html. cerco un modo per rendere piu pulito il codice  */
