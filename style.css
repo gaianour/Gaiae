@@ -1,6 +1,7 @@
 *{box-sizing: border-box; margin: 0px; padding: 0px;}
 
 a{color: #333; text-decoration: none;}
+.align-center{text-align: center;}
 
 /* dichiarazione font */
 @font-face {
@@ -64,14 +65,15 @@ header{
 
 main{margin-left: 150px; margin-right: 100px;}
 
-.main__grid{flex-wrap: wrap; display: flex; width: 100%;}
+.main__grid{flex-wrap: wrap; display: flex; width: 100%; margin-top: 60px;}
 .main__grid__item{text-align: center;}
 .item50{width:50%;}
 .item33{width:33%;}
 
-.main__intestazione{font-size: 40px; margin-right: 50px;}
-.main__sottotitolo{font-size: 20px; margin-top: 30px; margin-right: 50px;}
+.main__grid__item.item50{padding:40px;}
 
+.main__intestazione{font-size: 40px; margin-right: 50px;}
+.main__sottotitolo{font-size: 20px; margin-top: 30px;}
 .main__link{
    font-size: 25px; 
    text-decoration: underline; 
@@ -92,7 +94,10 @@ main{margin-left: 150px; margin-right: 100px;}
    padding-top: 80px;
 }
 
-.main__grid__item.item33{padding: 10px;}
+.main__sottotitolo.align-center{width: 70%; padding-bottom: 30px;}
+.main__grid__item.item33{padding: 20px;}
+
+.main__slider__intestazione{text-align: center;}
 
 
 
