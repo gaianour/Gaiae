@@ -1,7 +1,8 @@
 *{box-sizing: border-box; margin: 0px; padding: 0px;}
-
+html,body{height: 100%;}
 a{color: #333; text-decoration: none;}
-
+.margin{margin: 15px;}
+.position{position: relative;}
 /* dichiarazione font */
 @font-face {
     font-family: 'logo';
@@ -67,7 +68,7 @@ header{
 .main__grid{display: flex;flex-wrap: wrap ; width: 100%;}
 .main__grid__item{text-align: center;}
 .item50{width:50%;}
-.item33{width:33%;}
+.item33{width:33%; height:33%;}
 
 .main__intestazione{font-size: 40px; margin-right: 50px;}
 .main__sottotitolo{font-size: 20px; margin-top: 30px; margin-right: 50px;}
@@ -107,6 +108,33 @@ header{
 
 /* PORTFOLIO */
 /* main */
+.main__grid__item__cover{
+   position:absolute;
+   bottom:0px;
+   left:0px;
+   color: #fff;
+}
+.main__grid__item__cover{ background-image:url("https://source.unsplash.com/category/nature");
+   background-size: cover;
+   background-position: center;
+}
+.main__grid__item__filter{
+   background: #000;
+   position: absolute;
+   z-index:0;
+   opacity:0.5;
+   height: 250px;
+   width: 250px;
+   padding: 10px;
+}
+.main__grid__item__dimensionefoto{
+   
+   width: 33%;
+   /* height: 400px; */
+   /* width: 400px; */
+ 
+   /* margin: 25px; */
+}
 .main__grid__item__caption{
    display:table;
    width:100%;
@@ -117,17 +145,10 @@ header{
 .main__grid__item__caption__copy{
    display:table-cell;
    vertical-align: middle;
-   text-align:center ;
+   text-align:center;
    color: #fff;
 }
-.main__grid__item__filter{
-   background: #000;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   z-index:0;
-   opacity:0.5;
-}
+
 .footer{
    padding:10px;
    margin-top:15px ;
