@@ -1,6 +1,8 @@
 *{box-sizing: border-box; margin: 0px; padding: 0px;}
-
+html,body{height: 100%;}
 a{color: #333; text-decoration: none;}
+.margin{margin: 15px;}
+.position{position: relative;}
 .align-center{text-align: center;}
 
 /* dichiarazione font */
@@ -63,14 +65,12 @@ header{
 
 /* MAIN */
 
-main{margin-left: 150px; margin-right: 100px;}
 
-.main__grid{flex-wrap: wrap; display: flex; width: 100%; margin-top: 60px;}
+
+.main__grid{flex-wrap: wrap; display: flex; width: 100%;}
 .main__grid__item{text-align: center;}
 .item50{width:50%;}
 .item33{width:33%;}
-
-.main__grid__item.item50{padding:40px;}
 
 .main__intestazione{font-size: 40px; margin-right: 50px;}
 .main__sottotitolo{font-size: 20px; margin-top: 30px;}
@@ -111,28 +111,54 @@ main{margin-left: 150px; margin-right: 100px;}
 
 
 /* PORTFOLIO */
-.main__grid__item__normale {width: 100%; top: 0; left: 0;}
-.main__grid__item__hover{
-   overflow: hidden;transition: 0.2s;opacity: 0;width: 100%; padding: 10px; top: 0; left: 0;
+/* main */
+.main__grid__item__cover{
+   position:absolute;
+   bottom:0px;
+   left:0px;
+   color: #fff;
+}
+.main__grid__item__cover{ background-image:url("https://source.unsplash.com/category/nature");
+   background-size: cover;
+   background-position: center;
+}
+.main__grid__item__filter{
+   background: #000;
+   position: absolute;
+   z-index:0;
+   opacity:0.5;
+   height: 250px;
+   width: 250px;
+   padding: 10px;
+}
+.main__grid__item__dimensionefoto{
    
+   width: 33%;
+   /* height: 400px; */
+   /* width: 400px; */
+ 
+   /* margin: 25px; */
 }
-
-.main__grid__item__hover__scritte{
-   align-items: center; width: 100%; height: 100%; display: flex; 
+.main__grid__item__caption{
+   display:table;
+   width:100%;
+   height:100%;
+   position:relative;
+   z-index:1;
 }
-
-.main__grid__item__hover__scritte p{
-   text-align: center;
-   color: #eee;
+.main__grid__item__caption__copy{
+   display:table-cell;
+   vertical-align: middle;
+   text-align:center;
+   color: #fff;
 }
-
-.main__grid__item:hover .main__grid__item__hover {opacity: 0.8;}
 
 .footer{
    padding:10px;
    margin-top:15px ;
    background-color: #333;
 }
+.footer__p{color: #eee;}
 
 
 /* helpers */
