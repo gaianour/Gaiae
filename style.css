@@ -4,6 +4,8 @@ a{color: #333; text-decoration: none;}
 .margin{margin: 15px;}
 .position{position: relative;}
 .align-center{text-align: center;}
+.height70{height: 70%;}
+
 
 /* dichiarazione font */
 @font-face {
@@ -118,7 +120,7 @@ header{
    left:0px;
    color: #fff;
 }
-.main__grid__item__cover{ background-image:url("https://source.unsplash.com/category/nature");
+/* .main__grid__item__cover{ background-image:url("https://source.unsplash.com/category/nature"); */
    background-size: cover;
    background-position: center;
 }
@@ -157,8 +159,61 @@ header{
    padding:10px;
    margin-top:15px ;
    background-color: #333;
+   
+   
 }
 .footer__p{color: #eee;}
 
 
 /* helpers */
+
+/*  Pagine interne portfolio__foto */
+/* main pagine interne portfolio__foto */
+/* pagina sulle foto della città */
+.main__image__città{
+   background-image:url("https://source.unsplash.com/category/buildings");
+   background-size: cover;
+   background-position: center center;
+   position:relative;
+}
+.main__image__filter{
+   background: #000;
+   height: 100%;
+   width: 100%;
+   position:absolute;
+   z-index: 0;     /* sotto il testo o sopra il testo */
+    opacity:0.5;
+}
+.main__image__caption{
+   display: table;
+   padding:5px;
+   height: 100%;
+   width: 100%;
+   z-index: 1;
+}
+.main__image__caption__copy{
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   color: #fff;
+}
+
+.main__image__caption__copy__link{ background:#fff ; padding:15px 30px;}
+/* cards */
+.cards{max-width: 1200px; margin:40px auto;}
+.card{ width: 30%;margin:0 1.5%;float:left;}
+.card__image{width: 100%; height:auto;}
+.card__copy{margin: 5px;}
+.card__copy h3{ text-align: center; margin:5px;}
+/* media query */
+@media (max-width:767px) {
+   /* main immagine delle pagine interne portfolio__foto*/
+   .main__image__people
+   .main__image__nature
+   .main__image__città{height: 100%;}
+   
+}
+
+.clearfix {
+   overflow: auto;
+ }
