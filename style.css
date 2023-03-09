@@ -198,7 +198,7 @@ div.main__slider__sottotitolo{font-size: 20px; margin-top: 30px; text-align: cen
    width: 100%;
    position:absolute;
    z-index: 0;     /* sotto il testo o sopra il testo */
-    opacity:0.5;
+   opacity:0.5;
 }
 .main__image__caption{
    display: table;
@@ -219,7 +219,7 @@ div.main__slider__sottotitolo{font-size: 20px; margin-top: 30px; text-align: cen
 .cards{max-width: 1200px; margin:40px auto;}
 .card{ width: 30%;margin:0 1.5%;float:left;}
 .card__image{width: 100%; height:auto;}
-.card__copy{margin: 5px;}
+.card__copy{padding: 5px 20px; background-color: #fff; margin-bottom: 5px;}
 .card__copy h3{ text-align: center; margin:5px;}
 /* media query */
 @media (max-width:767px) {
