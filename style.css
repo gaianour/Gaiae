@@ -222,11 +222,19 @@ div.main__slider__sottotitolo{font-size: 20px; margin-top: 30px; text-align: cen
 .card__copy{padding: 5px 20px; background-color: #fff; margin-bottom: 5px;}
 .card__copy h3{ text-align: center; margin:5px;}
 /* media query */
+@media (max-width:998px){
+
+   /* section cards */
+   .card{width: 40%;margin: 3%;}
+}
 @media (max-width:767px) {
    /* main immagine delle pagine interne portfolio__foto*/
+   /* main */
    .main__image__people
    .main__image__nature
    .main__image__città{height: 100%;}
+   /* section, cards */
+   .card{width: 85%; margin: 3%;}
    
 }
 
