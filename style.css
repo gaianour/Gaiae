@@ -50,13 +50,28 @@ header{
 .header__item__social{font-family: logo; font-size: 30px; text-align: left;}
 #header__logo{font-size:60px; font-family: edensor; padding-bottom: 0px;}
 
-#header__navigazione{text-align: center;}
-#header__navigazione li{display: inline; padding: 20px;}
-#header__navigazione li a{color: #333; font-size: 15px; font-family: edensor; letter-spacing: 1.5px;}
-#header__navigazione li a:hover{background-color: #d3e8e0;}
-#titolo{font-size:60px; font-family: edensor; padding-bottom: 0px;}
+.nav{text-align: center;}
+.nav__list__item{display: inline; padding: 20px;}
+.nav__list__item a{color: #333; font-size: 15px;}
+.nav__list__item a:hover{background-color: #d3e8e0;}
 
-.img__copertina{width: 100%; margin: 0px;}
+
+.main__img{width: 100%; margin: 0px;}
+.container{padding: 15px; max-width: 500px; margin: 0 auto;}
+
+/* .cover{
+   position: relative;
+
+}
+.cover__content{
+   background: rgb(255,255,255);
+   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #eee 63%);
+   position: absolute; 
+   bottom: 0; 
+   left: 0;
+   width: 100%;
+   padding: 70px 150px 350px;
+} */
 
 
 
@@ -70,16 +85,16 @@ header{
    padding-bottom: 30px;
    padding-left: 120px; 
    padding-right: 120px;  
-
 }
+
 .main__grid__item{text-align: center;}
 .item50{width:50%;}
 .item33{width: 28%;}
 div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
 
-.main__intestazione{font-size: 40px;margin-top: 70px; text-align: center;}
-.main__sottotitolo{font-size: 20px; margin-top: 30px;}
-.main__link{
+.intestazione{font-size: 40px; text-align: center; margin: auto;}
+.sottotitolo{font-size: 20px; margin-top: 30px;}
+.link{
    font-size: 25px; 
    text-decoration: underline; 
    color: #1b3c57;
@@ -89,10 +104,8 @@ div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
    margin-right: 50px;
 }
 
-.main__immagine{width: 100%;}
 
-
-.main__grid__slider{
+.main__slider{
    flex-wrap: wrap; 
    display: flex; 
    width: 100%;
@@ -102,8 +115,7 @@ div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
    background: #e7e7e7;
 }
 
-div.main__intestazione{font-size: 40px; text-align: center; margin: auto;}
-div.main__slider__sottotitolo{font-size: 20px; margin-top: 30px; text-align: center; padding-left: 200px; padding-right: 200px; padding-bottom: 30px;}
+#main__slider__sottotitolo{font-size: 20px; margin-top: 30px; text-align: center; padding-left: 200px; padding-right: 200px; padding-bottom: 30px;}
 .main__grid__item.item33{margin: 30px; padding: 30px; box-shadow: 0px 0px 8px -3px #000000}
 
 
@@ -219,10 +231,10 @@ footer p{text-align: center; padding: 20px; color: #eee;}
    /* main__grid */
    .item50{width:100%;}
    .main__grid{padding: 10px;}
-   .main__intestazione{margin-top: 40px;}
-   .main__link{margin: 10px;}
-   .main__grid__slider{padding: 20px;}
-   div.main__slider__sottotitolo{padding: 20px;}
+   .intestazione{margin-top: 40px;}
+   .link{margin: 10px;}
+   .main__slider{padding: 20px;}
+   #main__slider__sottotitolo{padding: 20px;}
    /* section cards */
    .card{width: 40%;margin: 3%;}
 }
