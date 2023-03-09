@@ -90,6 +90,7 @@ header{
 .main__grid__item{text-align: center;}
 .item50{width:50%;}
 .item33{width: 28%;}
+.item45{width: 45%;}
 div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
 
 .intestazione{font-size: 40px; text-align: center; margin: auto;}
@@ -117,6 +118,14 @@ div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
 
 #main__slider__sottotitolo{font-size: 20px; margin-top: 30px; text-align: center; padding-left: 200px; padding-right: 200px; padding-bottom: 30px;}
 .main__grid__item.item33{margin: 30px; padding: 30px; box-shadow: 0px 0px 8px -3px #000000}
+.main__grid__item.item50{margin-top: 50px;}
+
+
+/* CHI SIAMO */
+.intestazione.info{margin-bottom: 10px;}
+.sottotitolo.info{margin: 0px; text-align: center;}
+.main__grid__item.item45.info{background: #d6d6d6; padding: 20px;margin: 25px; box-shadow: 0px 0px 8px -3px #000000;}
+
 
 
 
