@@ -136,10 +136,6 @@ div.main__slider__sottotitolo{font-size: 20px; margin-top: 30px; text-align: cen
    left:0px;
    color: #fff;
 }
-/* .main__grid__item__cover{ background-image:url("https://source.unsplash.com/category/nature"); */
-   background-size: cover;
-   background-position: center;
-}
 .main__grid__item__filter{
    background: #000;
    position: absolute;
@@ -186,12 +182,13 @@ div.main__slider__sottotitolo{font-size: 20px; margin-top: 30px; text-align: cen
 /*  Pagine interne portfolio__foto */
 /* main pagine interne portfolio__foto */
 /* pagina sulle foto della città */
-.main__image__città{
+.main__image{
    background-image:url("https://source.unsplash.com/category/buildings");
    background-size: cover;
    background-position: center center;
    position:relative;
 }
+
 .main__image__filter{
    background: #000;
    height: 100%;
