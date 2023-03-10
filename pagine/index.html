@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Gaiae</title>
 </head>
 
@@ -32,71 +37,98 @@
         </div>
 
 
-        <div id="header__navigazione"><!--seconda riga-->
-            <li><a href="chi-siamo.html">CHI SIAMO</a></li>
-            <li><a href="servizi.html">SERVIZI</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <div class="nav"><!--seconda riga-->
+            <ul class="nav__list">
+                <li class="nav__list__item"><a href="chi-siamo.html">CHI SIAMO</a></li>
+                <li class="nav__list__item"><a href="servizi.html">SERVIZI</a></li>
+                <li class="nav__list__item"><a href="portfolio.html">PORTFOLIO</a></li>
+            </ul>
+            
         </div>
     </header>
+    
+        <!-- <div class="cover">
+            <div class="cover__content">
+                <h1>The photography service you have been dreaming of</h1>
+            </div> -->
+            <img class="main__img" src="../immagini/copertina.JPG" alt=""> <!--immagine di copertina-->
+        <!-- </div> -->
 
-
-    <img class="img__copertina" src="../immagini/copertina.JPG" alt=""> <!--immagine di copertina-->
+    
     <main>
-
         <div class="main__grid">
-
             <div class="main__grid__item item50">
-
-                <div class="main__intestazione">
+                <div class="intestazione">
                     Dedicati il meglio con Gaiæ.
                 </div>
-
-                <div class="main__sottotitolo">
+                <div class="sottotitolo">
                     Cattura i migliori momenti della tua vita affidandoti a noi e giova dell'esperienza e la professionalità dei nostri fotografi.
                 </div>
-
-                <div class="main__link">
-                    --> scopri come
+                <div class="link">
+                    <a href="servizi.html">--> scopri come</a> 
                 </div>
-
             </div>
-
             <div class="main__grid__item item50">
-                <img src="../immagini/index1.JPG" alt="" class="main__immagine">
+                <img src="../immagini/index1.JPG" alt="" class="main__img">
             </div>
-
         </div>
 
-        <div class="main__grid__slider">
 
-            <div class="main__slider__intestazione">
+        <div class="main__slider">
+
+            <div class="intestazione">
                 Esplora il nostro portfolio.
             </div>
 
-            <div class="main__slider__sottotitolo">
+            <div class="sottotitolo" id="main__slider__sottotitolo">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quo amet reprehenderit, corporis illum quis! Nobis, rerum molestias at vitae quis explicabo, delectus doloremque laboriosam deleniti cupiditate, et iusto eos!
             </div>
+        
 
-            <div class="main__grid__item item33">
-                <img src="../immagini/index2.JPG" alt="" class="main__immagine">
-                <div class="main__sottotitolo">prima foto</div>
-            </div>
-
-            <div class="main__grid__item item33"> 
-                <img src="../immagini/index3.JPG" alt=""class="main__immagine">
-            </div>
-
-            <div class="main__grid__item item33">
-                <img src="../immagini/index4.JPG" alt="" class="main__immagine">
-            </div>
-
-
+        <div class="owl-carousel owl-theme">
+            <div class="item"><h4><img src="../immagini/immagini index/car1.JPG" alt=""></h4></div>
+            <div class="item"><h4><img src="../immagini/immagini index/car2.JPG" alt=""> </h4></div>
+            <div class="item"><h4><img src="../immagini/immagini index/car3.JPG" alt=""></h4></div>
+            <div class="item"><h4><img src="../immagini/immagini index/car4.JPG" alt=""></h4></div>
+            <div class="item"><h4><img src="../immagini/immagini index/car5.JPG" alt=""></h4></div>
+            <div class="item"><h4><img src="../immagini/immagini index/car6.JPG" alt=""></h4></div>
+            <div class="item"><h4><img src="../immagini/immagini index/car7.JPG" alt=""></h4></div>
+            <div class="item"><h4><img src="../immagini/immagini index/car8.JPG" alt=""></h4></div>
+            <div class="item"><h4><img src="../immagini/immagini index/car9.JPG" alt=""></h4></div>
         </div>
 
-    </main>
-</body>
-<footer>
-    <p class="footer__p">Copyright Gaiae  |  +39 333 333 3333  |  P.Iva 0000 0000 0000 0000  |  info@gaiae.com</p>
-</footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" 
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+         <script type="text/javascript">
+             $('.owl-carousel').owlCarousel({
+                 loop:true,
+                 margin:30,
+                 nav:true,
+                 responsive:{
+                     0:{
+                         items:1
+                     },
+                     600:{
+                         items:2
+                     },
+                     1000:{
+                         items:3
+                     }
+                 }
+             })
+         </script>
+
+    </main>
+    <footer>
+        <p class="footer__p">Copyright Gaiae  |  +39 333 333 3333  |  P.Iva 0000 0000 0000 0000  |  info@gaiae.com</p>
+    </footer>
+
+</body>
 </html>
