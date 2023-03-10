@@ -123,8 +123,8 @@ div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
 
 /* CHI SIAMO */
 .intestazione.info{margin-bottom: 10px;}
-.sottotitolo.info{margin: 0px; text-align: center;}
-.main__grid__item.item45.info{background: #d6d6d6; padding: 20px;margin: 25px; box-shadow: 0px 0px 8px -3px #000000;}
+.sottotitolo.info{margin: 10px; text-align: center;}
+.main__grid__item.item45.info{border: 1px solid #000; padding: 20px;margin: 25px; box-shadow: 0px 0px 8px -3px #000000;}
 
 
 
@@ -250,7 +250,8 @@ footer p{text-align: center; padding: 20px; color: #eee;}
 @media (max-width:767px) {
    /* INDEX */
    /* main */
-   .item50{width:100%;}
+   .item50 {width:100%;}
+   .item45{width: 100%;}
    .main__grid{padding: 10px;}
    .main__intestazione{margin-top: 40px;}
    .main__link{margin: 10px; margin-bottom: 20px;}
