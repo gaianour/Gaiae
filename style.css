@@ -39,7 +39,7 @@ header{
    position: fixed; 
    width: 100%; 
    background: #eee; 
-   height: 110px; 
+   height: 150px;; 
    top: 0; 
    box-shadow: 0px 0px 8px -3px #000000;
 }
@@ -51,9 +51,11 @@ header{
 #header__logo{font-size:60px; font-family: edensor; padding-bottom: 0px;}
 
 .nav{text-align: center;}
-.nav__list__item{display: inline; padding: 20px;}
-.nav__list__item a{color: #333; font-size: 15px;}
-.nav__list__item a:hover{background-color: #d3e8e0;}
+.nav__list__item{display: inline-block; margin-left: 5px;margin-right: 5px;}
+.nav__list__item a{color: #333;display: block; font-size: 15px;}
+.nav__list__item a:hover{background-color: #d3e8e0;display:block;}
+/* .header__icon-bar{float: right;} */
+.header__icon-bar span{ display:block;height:3px;margin:5px;background:#000 ;width: 20px;} */
 
 
 .main__img{width: 100%; margin: 0px; box-shadow: 0px 0px 8px -3px #000000;}
@@ -120,8 +122,15 @@ div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
 .main__grid__item.item33{margin: 30px; padding: 30px; box-shadow: 0px 0px 8px -3px #000000}
 .main__grid__item.item50{margin-top: 50px;}
 .item{box-shadow: 5px 5px 11px -6px #000000;}
-
-
+/* banner */
+.banner{background:#fff;height: 110px;}
+.banner__image{width: 30%;float:left; height:100%;
+   background-image:url("https://source.unsplash.com/category/nature/400x400");
+   background-size: cover;
+   background-position: center center;
+}
+.banner__copy{width: 70%;float:left;height:100%}
+.banner__copy p{color: #fff;}
 /* CHI SIAMO */
 .intestazione.info{margin-bottom: 10px;}
 .sottotitolo.info{margin: 10px; text-align: center;}
@@ -234,7 +243,7 @@ footer p{text-align: center; padding: 20px; color: #eee;}
 .main__image__caption__copy__link{ background:#fff ; padding:15px 30px;}
 /* cards */
 .cards{max-width: 1200px; margin:40px auto;}
-.card{ width: 30%;margin:0 1.5%;float:left;}
+.card{ width: 30%;margin:0 1.5% 1.5%;float:left;box-shadow: 10px 10px 5px #918c8c;}
 .card__image{width: 100%; height:auto;}
 .card__copy{padding: 5px 20px; background-color: #fff; margin-bottom: 5px;}
 .card__copy h3{ text-align: center; margin:5px;}
