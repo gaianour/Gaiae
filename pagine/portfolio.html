@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../temporneostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Gaiae</title>
 </head>
@@ -45,22 +48,10 @@
 
 <!--  main -> codice inerente griglia delle immagini.uso id per applicare differenti hover  -->
     <main>
-<<<<<<< HEAD
-       
-
-       
-=======
-        <div>
-            <div class="intestazione">benvenuti nel nostro portfolio</div>
->>>>>>> e761633463eb3dc1bb81cc7a8f012ed32ef9fbcb
-            <h1 class="margin">Benvenuti nel nostro PORTFOLIO</h1>
-            <p class="margin">Qui potrete trovare tutte le nostre raccolte principali.</p>
-            <p class="margin">Tutte le seguenti categorie saranno esposte ad"Il Giardino delle Culture" a Milano</p>
-        </div>
-       <div class="main__grid">
+       <!-- <div class="main__grid">
         <div class="main__grid__item item33 ">
-            <!-- <div class="main__grid__item__content"><h1></h1> </div> -->
-            <img src="../immagini/portfolio1.JPG" alt="" class="main__img">
+            <<div class="main__grid__item__content"><h1></h1> </div> -->
+            <!-- <img src="../immagini/portfolio1.JPG" alt="" class="main__img">
         </div>
 
         <div class="main__grid__item item33"> 
@@ -78,13 +69,56 @@
         </div> 
         <div class="main__grid__item item33">
             <img src="../immagini/portfolio2.JPG" alt="" class="main__img">
-        </div> 
-    
+        </div>  -->
+        <div  class="portfolio__video">
+            <video autoplay  muted loop id="video-back"> 
+                <source src="..//immagini/servizi__video2.mp4" type="video/mp4">
+            </video>
+            <div class="main__image__filter">
+                <div class="main__image__caption">
+                    <div class="main__image__caption__copy">
+                        <h1> PORTFOLIO</h1>
+
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <script>
+            
+            ScrollReveal().reveal('.reveal',{distance:'50px'});
+        </script>
+        <div class="portfolio__intestazione">
+            <div class="portfolio__intestazione__text">
+                <h1>BENVENUTI NEL NOSTRO PORTFOLIO</h1>
    
+                <p class="margin">Qui potrete trovare tutte le nostre raccolte principali.<br>
+                    Abbiamo raccolto i nostri lavori in 6 cartelle diverse:città,natura,piante,persone,cibo e musei.<br>
+                    Scegliete voi dove cominciare a scoprire il mondo Gaiæ!.<br>
+                    Tutte le seguenti categorie saranno esposte ad"Il Giardino delle Culture" a Milano
+                </p>
+            </div>
+            <div class="portfolio__intestazione__image">
+            </div> 
+        </div>
+        <div class="main__carousel margin"  data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="carousel__cell background-cell__città"><a href="portfolio__città.html"><h1> CITTà </h1></a></div>
+            <div class="carousel__cell background-cell__natura"><a href="portfolio__natura.html"><h1>NATURA</h1></a></div>
+            <div class="carousel__cell background-cell__piante"><a href="portfolio__piante.html"><h1>PIANTE</h1></a></div>
+            <div class="carousel__cell background-cell__persone"><a href="portfolio__persone.html"><h1>PERSONE</h1></a></div>
+            <div class="carousel__cell background-cell__cibo"><a href="portfolio__food.html"><h1>FOOD</h1></a></div>
+            <div class="carousel__cell background-cell__musei"><a href="portfolio__musei.html"><h1>MUSEI</h1></a></div>
+        </div>
+        
 
     </main>
     
     
 </body>
-<footer><p>Copyright Gaiae  |  +39 333 333 3333  |  P.Iva 0000 0000 0000 0000  |  info@gaiae.com</p> </footer>
+<footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <!-- per slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <p>Copyright Gaiae  |  +39 333 333 3333  |  P.Iva 0000 0000 0000 0000  |  info@gaiae.com</p> </footer>
 </html>
