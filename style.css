@@ -54,12 +54,9 @@ header{
 .nav{text-align: center;}
 .nav__list__item{display: inline-block; margin-left: 5px;margin-right: 5px;}
 .nav__list__item a{color: #333;/*display: block;*/ font-size: 15px;} 
- .nav__list__item a:hover{background-color: #d3e8e0; /*display:block;*/} 
+.nav__list__item a:hover{background-color: #d3e8e0; /*display:block;*/} 
 
-/* .header__icon-bar{float: right;}
-.header__icon-bar span{ display:block;height:3px;margin:5px;background:#000 ;width: 20px;} */
-
-
+#margin-top0{margin-top: 0px;}
 .main__img{width: 100%; margin: 0px; box-shadow: 0px 0px 8px -3px #000000;}
 .container{padding: 15px; max-width: 500px; margin: 0 auto;}
 
@@ -95,19 +92,35 @@ header{
 .item50{width:50%;}
 .item33{width: 28%;}
 .item45{width: 45%;}
+.item10{width: 10%;}
+.item90{width: 90%;}
 div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
 
 .intestazione{font-size: 40px; text-align: center; margin: auto;}
 .sottotitolo{font-size: 20px; margin-top: 30px; text-align: center;}
 .link{
    font-size: 25px; 
-   text-decoration: underline; 
-   color: #1b3c57;
-   font-style: italic;
+   color: #333;
    margin-top: 30px;
    margin-left: 20px;
    margin-right: 50px;
+   transition-property: color;
+   transition-duration: 1s;
 }
+
+.link a{
+   border: 1px solid #333;
+   padding: 3px 15px;
+   transition-property: background-color;
+   transition-duration: 1s;
+
+}
+
+.link a:hover{
+   background: #333;
+   color: #eee;
+}
+
 
 
 .main__slider{
@@ -124,6 +137,16 @@ div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
 .main__grid__item.item33{margin: 30px; padding: 30px; box-shadow: 0px 0px 8px -3px #000000}
 .main__grid__item.item50{margin-top: 50px;}
 .item{box-shadow: 5px 5px 11px -6px #000000;}
+
+
+/* footer */
+footer{margin-top: 100px;}
+.footer__grid{display: flex; flex-wrap: wrap; padding: 20px 200px 100px; background-color: #333;}
+.footer__intestazione{font-size: 40px; color: #ddd;margin:50px 0px 10px 0px;}
+.footer__sottotitolo{font-size: 20px; margin: 10px 10px ; color: #ddd;margin-right: 30px; margin-top: 0px;}
+.footer__social{font-family: logo; font-size: 20px; text-align: left; color: #ddd;}
+.footer__social a{color: #eee; padding: 0px 10px;}
+.footer_grid_grid{display: flex; flex-wrap: wrap; padding: 100px 50px 0px 50px; background-color: #333;}
 
 
 /* banner */
@@ -265,27 +288,59 @@ footer p{text-align: center; padding: 20px; color: #eee;}
    .intestazione{margin-top: 40px;}
    .link{margin: 10px;}
    .main__slider{padding: 20px;}
-   #main__slider__sottotitolo{padding: 20px;}
-   /* .main__image__filter,.main__image__caption{height: auto;margin-top: 5%; padding: auto;} */
+   #main_slider_sottotitolo{padding: 20px;}
+   .main__img{margin-top: 20px; }
+
+   /* footer */
+   .footer_grid_grid{display: flex; flex-wrap: wrap; padding: 30px 0px; background-color: #333;}
+
    /* section cards */
    .card{width: 40%;margin: 3%;}
+
 }
 @media (max-width:767px) {
    /* INDEX */
+   /* header */
+   .header_item_social{display: none;}
    /* main */
    .item50 {width:100%;}
    .item45{width: 100%;}
-   .main__grid{padding: 10px;}
-   .main__intestazione{margin-top: 40px;}
-   .main__link{margin: 10px; margin-bottom: 20px;}
-   .main__grid__slider{padding: 20px;}
-   .main__slider__sottotitolo{padding: 20px; margin-top: 0px;}
-   /* main immagine delle pagine interne portfolio__foto*/
-   /* main */
+   .item33{width: 100%;}
 
-   .main__image__città{height: 100%;}
+   .main__grid{padding: 10px;}
+   .main__link{margin: 10px; margin-bottom: 20px;}
+   .main_grid_slider{padding: 20px;}
+   div.main_slider_sottotitolo{padding: 20px; margin-top: 0px;}
+   .main_grid_item.item50{margin: 0px;}
+   #main__slider__sottotitolo{
+      font-size: 20px; 
+      margin-top: 0px; 
+      text-align: center; 
+      padding: 30px 20px;
+   }
+   .link{margin-top: 40px;}
+
+   /* footer */
+   .footer_grid_item.item50{width: 100%;}
+   .footer__grid{display: flex; flex-wrap: wrap; padding: 10px 50px; background-color: #333;}
+   .footer_grid_grid{display: flex; flex-wrap: wrap; padding: 30px 0px; background-color: #333;}
+
+   /* SERVIZI */
+   .paragrafo{
+      padding: 20px 20px;
+      margin: 0px;
+   }
+
+        /* main immagine delle pagine interne portfolio__foto*/
+   /* main */
+   /* .main_image_people
+   .main_image_nature */
+   .main_image_città{height: 100%;}
    /* section, cards */
    .card{width: 85%; margin: 3%;}
+
+   }
+
    
 }
 
