@@ -1,0 +1,138 @@
+
+
+.servizi__video,.portfolio__video{
+    position:relative;
+    height:600px;
+    display: flex;width:100%; align-items:center ;
+    background:linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.9)) url(servizi__video1.mp4) no-repeat center center ;
+    background-size:cover;
+    position:center center;
+    overflow: hidden;
+    width: 100%;
+}
+ .servizi__video:after{
+    content:' ';
+    width: 100%;
+    height: auto;
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    background: #000;
+    opacity: 0.4;
+
+
+} 
+.servizi__video__content{
+    width:100%;
+    max-width: 1354px;
+    margin:0 auto;
+    z-index:30;
+    position:relative;
+}
+.servizi__video__content h1 h2 p{
+    color:#fff;
+}
+#video-back{
+    position:relative;
+    bottom:0;
+    right:0;
+    min-width:100%;
+    z-index:0;
+}
+@media (max-width:1300px) {
+    .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
+    .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
+    .portfolio__intestazione__immagine{display: none;}
+
+}
+@media (max-width:768px) {
+    .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
+    .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
+}
+
+/* portfolio paragrafo main */
+.portfolio__intestazione__text{
+    width:50%;
+    height: auto;
+    margin:40px;
+    display: block;
+    border: 20ch;
+    padding: 20px;
+    -moz-box-shadow:  10px  10px 5px #dedede;
+  -webkit-box-shadow:  10px  10px 5px #dedede;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
+  box-shadow: 10px 10px 5px #dedede;
+}
+.portfolio__intestazione__image{
+    width:35%;
+    height: auto;
+    display: block;
+    border: 20ch;
+    padding: 20px;
+    -moz-box-shadow:  10px  10px 5px #dedede;
+  -webkit-box-shadow:  10px  10px 5px #dedede;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
+  box-shadow: 10px 10px 5px #dedede;
+  background: url(https://images.pexels.com/photos/15817193/pexels-photo-15817193.jpeg?auto=compress&cs=tinysrgb&w=600)
+}
+.portfolio__intestazione{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:768px) {
+    .portfolio__intestazione__image{display: none;}
+    .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/127753/pexels-photo-127753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 10px;}
+    .portfolio__intestazione__text p,h1{z-index: 10; color: #fff;}
+}
+/*grid pagina portfolio*/
+.grid{
+    max-width:1350px;
+    padding:0 30px;
+    margin:0 auto;
+    display: flex;
+}
+/* .grid .col{
+    width:100%;
+}
+@media ( max-width:768px){
+    .grid{display: flex;flex-wrap: wrap; }
+} */
+
+/* courosel */
+.main__corousel{
+    padding: 40 0px;
+}
+.carousel__cell{
+    width:450px;
+    height: 450px;
+    border-radius: 100%;
+    line-height: 450px;
+    text-align: center;
+}
+.background-cell__città{
+    background: url(https://images.pexels.com/photos/1069039/pexels-photo-1069039.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+.background-cell__natura{
+    background: url(https://images.pexels.com/photos/3695553/pexels-photo-3695553.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+.background-cell__piante{
+    background: url(https://images.pexels.com/photos/1187079/pexels-photo-1187079.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+.background-cell__persone{
+    background: url(https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+.background-cell__cibo{
+    background: url(https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+.background-cell__musei{
+    background: url(https://images.pexels.com/photos/1481464/pexels-photo-1481464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.main__corousel h1{display:none;}
+.carousel__cell:hover {
+    background: palegoldenrod;
+    background:linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.9))
+}
+.main__corousel h1:hover{ display:block; z-index:10; color: black; }
