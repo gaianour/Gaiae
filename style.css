@@ -164,10 +164,19 @@ footer{margin-top: 100px;}
 .sottotitolo.info{margin: 10px; text-align: center;}
 .main__grid__item.item45.info{border: 1px solid #000; padding: 20px;margin: 25px; box-shadow: 0px 0px 8px -3px #000000;}
 
+.recensione{padding: 20px; margin: 0px 100px;}
+.recensioni_val{font-size: 40px; text-align: center; padding: 20px 0px;}
+.recensioni__testo{font-size: 20px; text-align: center;}
+.recensioni__autore{font-size: 16px; font-style: italic; padding: 30px 0px; text-align: center;}
+
+
+
+
 /* SERVIZI */
 .paragrafo{
    padding: 20px 350px;
-   margin: 0px;
+   margin: 10px;
+   border: 40px solid white;
 }
 
 .main__grid__item.item33#servizi__linea{border-bottom: 8px solid #b39569;;}
