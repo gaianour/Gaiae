@@ -85,7 +85,7 @@ header{
    width: 100%;
    height: 100vh;
    z-index:10;
-   background: whitesmoke;
+   background: #eee;
    position: relative;
 }
 
@@ -361,6 +361,8 @@ footer p{text-align: center; padding: 20px; color: #eee;}
    .main__slider{padding: 20px;}
    #main_slider_sottotitolo{padding: 20px;}
    .main__img{margin-top: 20px; }
+   .header__item__social{visibility: hidden;}
+
 
    /* footer */
    .footer_grid_grid{display: flex; flex-wrap: wrap; padding: 30px 0px; background-color: #333;}
@@ -390,6 +392,7 @@ footer p{text-align: center; padding: 20px; color: #eee;}
       padding: 30px 20px;
    }
    .link{margin-top: 40px;}
+   .header__item__social{visibility: hidden;}
 
    /* footer */
    .footer_grid_item.item50{width: 100%;}
