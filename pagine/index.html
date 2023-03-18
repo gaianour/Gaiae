@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Gaiae</title>
+
 </head>
 
 <body>
@@ -49,10 +50,28 @@
     </header>
          <video autoplay  muted loop class="video-index"  src="../immagini/index-video1.mp4"> </video>
         
-            <div class="section-video"><h1 class="section-video__text"> BENVENUTI SUL NOSTRO SITO</h1></div>
-            <div class="section-video"><h2 class="section-video__text"> Qui potrai scoprire..</h2></div>
-            <div class="section-video"><h2 class="section-video__text"> un nuovo modo di fare fotografia.....<br> con:</h2></div> 
-     
+            <div class="section-video watch"><h1 class="section-video__text"> BENVENUTI SUL NOSTRO SITO</h1></div>
+            <div class="section-video watch"><h2 class="section-video__text"> Qui potrai scoprire..</h2></div>
+            <div class="section-video watch"><h2 class="section-video__text"> un nuovo modo di fare fotografia.....<br> con:</h2></div>
+
+        <!-- <script type="text/javascript">
+            var elements_to_watch=document.querySelectorAll('.watch');
+
+            var callback=function(items) {
+                items.forEach((item) => {
+                    if(item.isIntersecting){
+                        item.target.classList.add("in-page");
+                    }else{
+                        item.target.classList.remove("in-page");
+                    }
+                });
+                var observer= new IntersectionObserver(callback,{threshold:0.6});
+
+                elements_to_watch.forEach((element)=> {
+                   observer.observe(element);
+                });
+            }
+        </script> -->
         
         <!-- <div class="cover">
             <div class="cover__content">
@@ -198,8 +217,8 @@
             </div>
         </div>
 
-
-        
+<!-- j-query -->
+        <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script> 
     </footer> 
 
 </section>
