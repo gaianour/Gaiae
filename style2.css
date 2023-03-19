@@ -52,8 +52,14 @@
 }
 
 /* portfolio paragrafo main */
+.portfolio__intestazione{
+    margin-bottom: 180px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .portfolio__intestazione__text{
-    width:50%;
+    width:40%;
     height: auto;
     margin:40px;
     display: block;
@@ -65,7 +71,7 @@
   box-shadow: 10px 10px 5px #dedede;
 }
 .portfolio__intestazione__image{
-    width:35%;
+    width:50%;
     height: auto;
     display: block;
     border: 20ch;
@@ -76,13 +82,20 @@
   box-shadow: 10px 10px 5px #dedede;
   background: url(https://images.pexels.com/photos/15817193/pexels-photo-15817193.jpeg?auto=compress&cs=tinysrgb&w=600)
 }
-.portfolio__intestazione{
-    margin-bottom: 100px;
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
+
+#portfolio__sottotitolo{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    -moz-box-shadow:  10px  10px 5px #dedede;
+  -webkit-box-shadow:  10px  10px 5px #dedede;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
+  box-shadow: 10px 10px 5px #dedede;
+
 }
 @media (max-width:768px) {
+    .portfolio__intestazione{margin-top: 0; margin-bottom: 50px;}
     .portfolio__intestazione__image{display: none;}
     .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/127753/pexels-photo-127753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 10px;}
     .portfolio__intestazione__text p,h1{z-index: 10; color: #fff;}
@@ -102,8 +115,12 @@
 } */
 
 /* courosel */
-.main__corousel{
-    padding: 40 0px;
+.main__carousel{
+    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+
 }
 .carousel__cell{
     width:450px;
@@ -130,9 +147,9 @@
 .background-cell__musei{
     background: url(https://images.pexels.com/photos/1481464/pexels-photo-1481464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
-.main__corousel h1{display:none;}
+
 .carousel__cell:hover {
     background: palegoldenrod;
-    background:linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.9))
+    background:linear-gradient(0deg,rgba(50, 40, 52, 0.2),rgba(82, 142, 162, 0.423))
 }
 .main__corousel h1:hover{ display:block; z-index:10; color: black; }
