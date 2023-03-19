@@ -57,6 +57,8 @@
     margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
+
+    margin-right: auto;
 }
 .portfolio__intestazione__text{
     width:40%;
@@ -80,7 +82,8 @@
   -webkit-box-shadow:  10px  10px 5px #dedede;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
   box-shadow: 10px 10px 5px #dedede;
-  background: url(https://images.pexels.com/photos/15817193/pexels-photo-15817193.jpeg?auto=compress&cs=tinysrgb&w=600)
+  background: url(https://images.pexels.com/photos/15817193/pexels-photo-15817193.jpeg?auto=compress&cs=tinysrgb&w=600);
+  max-width: 600px;
 }
 
 #portfolio__sottotitolo{
@@ -94,11 +97,11 @@
   box-shadow: 10px 10px 5px #dedede;
 
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
     .portfolio__intestazione{margin-top: 0; margin-bottom: 50px;}
     .portfolio__intestazione__image{display: none;}
-    .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/127753/pexels-photo-127753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 10px;}
-    .portfolio__intestazione__text p,h1{z-index: 10; color: #fff;}
+    .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=300);background-blend-mode:darken;box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 50px;}
+    .portfolio__intestazione__text p,h2{z-index: 10; color: #fff;}
 }
 /*grid pagina portfolio*/
 .grid{
@@ -152,4 +155,4 @@
     background: palegoldenrod;
     background:linear-gradient(0deg,rgba(50, 40, 52, 0.2),rgba(82, 142, 162, 0.423))
 }
-.main__corousel h1:hover{ display:block; z-index:10; color: black; }
+
