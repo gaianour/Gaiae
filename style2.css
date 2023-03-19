@@ -80,7 +80,11 @@
     min-width:100%;
     z-index:0;
 }
-
+#servizi__foto1{
+   max-width: 55%;
+   margin-left: 22.5%;
+   margin-right: 22.5%;
+}
 /* PORTFOLIO */
 /* portfolio paragrafo intestazione */
 .portfolio__intestazione{
@@ -114,11 +118,11 @@
   -webkit-box-shadow:  10px  10px 5px #dedede;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
   box-shadow: 10px 10px 5px #b0a8a8;
-  background: url(https://images.pexels.com/photos/15817193/pexels-photo-15817193.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background: url(https://images.pexels.com/photos/15817193/pexels-photo-15817193.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
   max-width: 600px;
 }
-/* paragrafo con sottotitolo ( le categorie) */
-#portfolio__sottotitolo{
+/* paragrafo con sottotitolo ( le categorie ) presente sia nella pagina portfolio che nella pagina servizi*/
+#main__sottotitolo{
     max-width: 55%;
     margin-left: 22.5%;
     margin-right: 22.5%;
@@ -204,9 +208,18 @@
 .card__copy{padding: 5px 20px; background-color: #fff; margin-bottom: 5px;}
 .card__copy h3{ text-align: center; margin:5px;}
 
+@media (max-width:1300px)
+{
+    .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
+    .portfolio__intestazione__immagine{display: none;}
+    .portfolio__intestazione{margin-top: 0; margin-bottom: 50px;}
+    .portfolio__intestazione__image{display: none;}
+    .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=300);background-blend-mode:darken;box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 50px;}
+    .portfolio__intestazione__text p,h2{z-index: 10; color: #fff;}
+}
 
 /* media query servizi, portfolio e chi-siamo (comprese le pagine interne a portfolio)*/
-@media (max-width:1200px) {
+@media (max-width:998px) {
     /* video portfolio e servizi */
     .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
     /* intestazione portfolio */
@@ -216,12 +229,33 @@
     .portfolio__intestazione__image{display: none;}
     .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=300);background-blend-mode:darken;box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 50px;}
     .portfolio__intestazione__text p,h2{z-index: 10; color: #fff;}
+    /* section cards */
+    .card{width: 40%;margin: 3%;}
+
 }
 
 @media (max-width:768px) {
+     /* SERVIZI */
+   .paragrafo{
+    padding: 20px 20px;
+    margin: 0px;
+ }
+ .intestazione{width: 100%;}
+ .sottotitolo{width: 100%;}
+ #servizi__foto1{display: none;}
+
     /* video portfolio e servizi */
     .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
     /* intestazione portfolio */
     .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
+    #main__sottotitolo{ margin:0;padding: 20px; max-width: 100%;}
+    /* main immagine delle pagine interne portfolio__foto*/
+   /* main */
+   /* .main_image_people
+   .main_image_nature */
+   .main_image_città{height: 100%;}
+   /* section, cards */
+   .card{width: 85%; margin: 3%;}
+
 }
 
