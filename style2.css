@@ -106,20 +106,22 @@
 .portfolio__intestazione__image{
     width:50%;
     height: auto;
+    min-height: 400px;
     display: block;
     border: 20ch;
     padding: 20px;
     -moz-box-shadow:  10px  10px 5px #dedede;
   -webkit-box-shadow:  10px  10px 5px #dedede;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
-  box-shadow: 10px 10px 5px #dedede;
+  box-shadow: 10px 10px 5px #b0a8a8;
   background: url(https://images.pexels.com/photos/15817193/pexels-photo-15817193.jpeg?auto=compress&cs=tinysrgb&w=600);
   max-width: 600px;
 }
 /* paragrafo con sottotitolo ( le categorie) */
 #portfolio__sottotitolo{
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 55%;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
     padding-bottom: 30px;
     margin-bottom: 50px;
     -moz-box-shadow:  10px  10px 5px #dedede;
