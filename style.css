@@ -178,13 +178,9 @@ footer p{text-align: center; padding: 20px; color: #eee;}
    #main_slider_sottotitolo{padding: 20px;}
    .main__img{margin-top: 20px; }
    .header__item__social{visibility: hidden;}
-
-
+   .main__grid__item{width: 50%;}
    /* footer */
    .footer_grid_grid{display: flex; flex-wrap: wrap; padding: 30px 0px; background-color: #333;}
-
-   /* section cards */
-   .card{width: 40%;margin: 3%;}
 
 }
 @media (max-width:767px) {
@@ -197,6 +193,7 @@ footer p{text-align: center; padding: 20px; color: #eee;}
    .item33{width: 100%;}
 
    .main__grid{padding: 10px;}
+   .main__grid__item{width: 100%;}
    .main__link{margin: 10px; margin-bottom: 20px;}
    .main_grid_slider{padding: 20px;}
    div.main_slider_sottotitolo{padding: 20px; margin-top: 0px;}
@@ -215,21 +212,7 @@ footer p{text-align: center; padding: 20px; color: #eee;}
    .footer__grid{display: flex; flex-wrap: wrap; padding: 10px 50px; background-color: #333;}
    .footer_grid_grid{display: flex; flex-wrap: wrap; padding: 30px 0px; background-color: #333;}
 
-   /* SERVIZI */
-   .paragrafo{
-      padding: 20px 20px;
-      margin: 0px;
-   }
-
-        /* main immagine delle pagine interne portfolio__foto*/
-   /* main */
-   /* .main_image_people
-   .main_image_nature */
-   .main_image_città{height: 100%;}
-   /* section, cards */
-   .card{width: 85%; margin: 3%;}
-
-   }
+}
 
 
 .clearfix {
