@@ -188,7 +188,7 @@ div.main__grid__item.item50{padding-right: 30px; padding-left: 30px;}
 
 
 /* footer */
-footer{margin-top: 100px;}
+footer{margin-top: 0px;}
 .footer__grid{display: flex; flex-wrap: wrap; padding: 20px 200px 100px; background-color: #333;}
 .footer__intestazione{font-size: 40px; color: #ddd;margin:50px 0px 10px 0px;}
 .footer__sottotitolo{font-size: 20px; margin: 10px 10px ; color: #ddd;margin-right: 30px; margin-top: 0px;}
@@ -308,7 +308,7 @@ footer{margin-top: 100px;}
 
 footer{
    padding:10px;
-   margin-top:15px ;
+  
    background-color: #333;
    
 }
