@@ -80,11 +80,6 @@
     min-width:100%;
     z-index:0;
 }
-#servizi__foto1{
-   max-width: 55%;
-   margin-left: 22.5%;
-   margin-right: 22.5%;
-}
 /* PORTFOLIO */
 /* portfolio paragrafo intestazione */
 .portfolio__intestazione{
@@ -216,10 +211,14 @@
     .portfolio__intestazione__image{display: none;}
     .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=300);background-blend-mode:darken;box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 50px;}
     .portfolio__intestazione__text p,h2{z-index: 10; color: #fff;}
+    #servizi__linea{width: 50%;}
 }
 
 /* media query servizi, portfolio e chi-siamo (comprese le pagine interne a portfolio)*/
 @media (max-width:998px) {
+    /* servizi */
+    #servizi__linea{width: 50%;}
+    
     /* video portfolio e servizi */
     .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
     /* intestazione portfolio */
@@ -243,7 +242,8 @@
  .intestazione{width: 100%;}
  .sottotitolo{width: 100%;}
  #servizi__foto1{display: none;}
-
+ #servizi__linea{width: 100%;}
+ #color-white{ margin: auto;}
     /* video portfolio e servizi */
     .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
     /* intestazione portfolio */
