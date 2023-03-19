@@ -1,5 +1,49 @@
+/* css inerente alle pagine interne */
 
+/* CHI SIAMO */
+.intestazione.info{margin-bottom: 10px;}
+.sottotitolo.info{margin: 10px; text-align: center;}
+.main__grid__item.item45.info{border: 1px solid #000; padding: 20px;margin: 25px; box-shadow: 0px 0px 8px -3px #000000;}
 
+.recensione{padding: 20px; margin: 0px 350px; background: #333;}
+.recensioni_val{font-size: 40px; text-align: center; padding: 20px 0px; color: #d0b03b;}
+.recensioni__testo{font-size: 20px; text-align: center; margin: 0px 100px; color: #eee;}
+.recensioni__autore{font-size: 16px; font-style: italic; padding: 30px 0px; text-align: center; color: #eee;}
+.item{box-shadow: none;}
+
+/* SERVIZI */
+.paragrafo{
+    padding: 20px 350px;
+    margin: 10px;
+    border: 40px solid #eee;
+ }
+ 
+ .main__grid__item.item33#servizi__linea{border-bottom: 8px solid #b39569;;}
+ 
+ .servizi__intestazione{font-size: 25px; padding-top: 20px;}
+ .servizi__icona{
+    opacity: 30%;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+ }
+ .servizi__icona:hover{opacity: 100%;}
+ 
+ #servizi__grid{background: #000000;}
+ #color-white{color: #eee;}
+ .servizi__prezzo{
+    background: #937b57; 
+    margin: 40px 50px 0px; 
+    padding: 10px; 
+    font-size: 25px; 
+    color: #eee;
+    box-shadow: 0px 0px 8px -3px #000000;
+    transition-property: background;
+    transition-duration: 0.5s;
+ }
+ .servizi__prezzo:hover{background: #b39569;}
+
+ /* video servizi e portfolio */
+ 
 .servizi__video,.portfolio__video{
     position:relative;
     height:600px;
@@ -10,7 +54,7 @@
     overflow: hidden;
     width: 100%;
 }
- .servizi__video:after{
+.servizi__video:after{
     content:' ';
     width: 100%;
     height: auto;
@@ -20,8 +64,6 @@
     left:0;
     background: #000;
     opacity: 0.4;
-
-
 } 
 .servizi__video__content{
     width:100%;
@@ -30,9 +72,7 @@
     z-index:30;
     position:relative;
 }
-.servizi__video__content h1 h2 p{
-    color:#fff;
-}
+.servizi__video__content h1 h2 p{ color:#fff;}
 #video-back{
     position:relative;
     bottom:0;
@@ -40,24 +80,14 @@
     min-width:100%;
     z-index:0;
 }
-@media (max-width:1300px) {
-    .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
-    .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
-    .portfolio__intestazione__immagine{display: none;}
 
-}
-@media (max-width:768px) {
-    .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
-    .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
-}
-
-/* portfolio paragrafo main */
+/* PORTFOLIO */
+/* portfolio paragrafo intestazione */
 .portfolio__intestazione{
     margin-bottom: 180px;
     margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
-
     margin-right: auto;
 }
 .portfolio__intestazione__text{
@@ -72,6 +102,7 @@
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
   box-shadow: 10px 10px 5px #dedede;
 }
+/* immagine intestazione */
 .portfolio__intestazione__image{
     width:50%;
     height: auto;
@@ -85,7 +116,7 @@
   background: url(https://images.pexels.com/photos/15817193/pexels-photo-15817193.jpeg?auto=compress&cs=tinysrgb&w=600);
   max-width: 600px;
 }
-
+/* paragrafo con sottotitolo ( le categorie) */
 #portfolio__sottotitolo{
     margin-left: 20px;
     margin-right: 20px;
@@ -97,33 +128,12 @@
   box-shadow: 10px 10px 5px #dedede;
 
 }
-@media (max-width:1100px) {
-    .portfolio__intestazione{margin-top: 0; margin-bottom: 50px;}
-    .portfolio__intestazione__image{display: none;}
-    .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=300);background-blend-mode:darken;box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 50px;}
-    .portfolio__intestazione__text p,h2{z-index: 10; color: #fff;}
-}
-/*grid pagina portfolio*/
-.grid{
-    max-width:1350px;
-    padding:0 30px;
-    margin:0 auto;
-    display: flex;
-}
-/* .grid .col{
-    width:100%;
-}
-@media ( max-width:768px){
-    .grid{display: flex;flex-wrap: wrap; }
-} */
-
-/* courosel */
+/* carousel portfolio */
 .main__carousel{
     padding-bottom: 100px;
     padding-top: 10px;
     padding-left: 0px;
     padding-right: 10px;
-
 }
 .carousel__cell{
     width:450px;
@@ -150,9 +160,66 @@
 .background-cell__musei{
     background: url(https://images.pexels.com/photos/1481464/pexels-photo-1481464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
-
 .carousel__cell:hover {
     background: palegoldenrod;
     background:linear-gradient(0deg,rgba(50, 40, 52, 0.2),rgba(82, 142, 162, 0.423))
+}
+/* pagine interne a portfolio:natura,persone, piante,città,musei e cibo */
+/* IMMAGINE PRINCIPALE */
+.main__image{
+    background-image:url("https://source.unsplash.com/category/buildings");
+    background-size: cover;
+    background-position: center center;
+    position:relative;
+}
+.main__image__caption{
+    display: table;
+    padding:5px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.main__image__caption__copy{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+.main__image__caption__copy__link{ background:#fff ; padding:15px 30px;} 
+/* filtro immagine principale */
+.main__image__filter{
+    background: #000;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    z-index: 0;     /* sotto il testo o sopra il testo */
+    opacity:0.5;
+}
+ /* cards pagine interne  portfolio */
+.cards{max-width: 1200px; margin:40px auto;}
+.card{ width: 30%;margin:0 1.5% 1.5%;float:left;box-shadow: 0px 0px 8px -3px #000000;}
+.card__image{width: 100%; height:auto;}
+.card__copy{padding: 5px 20px; background-color: #fff; margin-bottom: 5px;}
+.card__copy h3{ text-align: center; margin:5px;}
+
+
+/* media query servizi, portfolio e chi-siamo (comprese le pagine interne a portfolio)*/
+@media (max-width:1200px) {
+    /* video portfolio e servizi */
+    .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
+    /* intestazione portfolio */
+    .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
+    .portfolio__intestazione__immagine{display: none;}
+    .portfolio__intestazione{margin-top: 0; margin-bottom: 50px;}
+    .portfolio__intestazione__image{display: none;}
+    .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=300);background-blend-mode:darken;box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 50px;}
+    .portfolio__intestazione__text p,h2{z-index: 10; color: #fff;}
+}
+
+@media (max-width:768px) {
+    /* video portfolio e servizi */
+    .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
+    /* intestazione portfolio */
+    .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
 }
 
