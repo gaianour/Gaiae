@@ -205,13 +205,16 @@
 
 @media (max-width:1300px)
 {
+    /* servizi */
+     #servizi__linea{width: 50%;margin-left: auto;margin-right: auto;margin-bottom: 10px;margin-top: 10px; }
+     /* portfolio */
     .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
     .portfolio__intestazione__immagine{display: none;}
     .portfolio__intestazione{margin-top: 0; margin-bottom: 50px;}
     .portfolio__intestazione__image{display: none;}
     .portfolio__intestazione__text{background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=300);background-blend-mode:darken;box-shadow: #000; margin: 0;height: auto; width: 100%; padding: 50px;}
     .portfolio__intestazione__text p,h2{z-index: 10; color: #fff;}
-    #servizi__linea{width: 50%;}
+   
 }
 
 /* media query servizi, portfolio e chi-siamo (comprese le pagine interne a portfolio)*/
@@ -239,8 +242,7 @@
     padding: 20px 20px;
     margin: 0px;
  }
- .intestazione{width: 100%;}
- .sottotitolo{width: 100%;}
+ 
  #servizi__foto1{display: none;}
  #servizi__linea{width: 100%;}
  #color-white{ margin: auto;}
