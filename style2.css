@@ -251,6 +251,7 @@
  #color-white{ margin: auto;}
     /* video portfolio e servizi */
     .servizi__video,.portfolio__video{ position:center center;margin-top: 0;height: auto;}
+    /*  portfolio */
     /* intestazione portfolio */
     .portfolio__intestazione__text{margin-bottom:10px;padding: 2px;}
     #main__sottotitolo{ margin:0;padding: 20px; max-width: 100%;}
@@ -261,6 +262,5 @@
    .main_image_città{height: 100%;}
    /* section, cards */
    .card{width: 85%; margin: 3%;}
-
 }
 
